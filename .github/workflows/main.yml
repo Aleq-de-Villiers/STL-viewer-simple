@@ -31,9 +31,9 @@ jobs:
       - name: Install all dependencies
         run: npm install
 
-      - name: test
+      - name: Start and Test
         run: |
-          npm run start
+          npm start & npx wait-on http://localhost:3000
           npm run test
 
       - name: Build
