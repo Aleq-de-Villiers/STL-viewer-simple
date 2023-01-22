@@ -7,7 +7,21 @@ on:
       - master
 
 jobs:
-  test:
+  # test:
+  #   runs-on: ubuntu-latest
+  #   name: test
+  #   steps:
+  #     - name: git-checkout
+  #       uses: actions/checkout@v2
+
+  #     - name: Install all dependencies
+  #       run: npm install
+
+  #     - name: Build
+  #       run: npm run test
+
+  build:
+    # requires: test
     runs-on: ubuntu-latest
     name: Build and Push
     steps:
@@ -19,16 +33,6 @@ jobs:
 
       - name: Build
         run: npm run test
-        
-  build:
-    runs-on: ubuntu-latest
-    name: Build and Push
-    steps:
-      - name: git-checkout
-        uses: actions/checkout@v2
-
-      - name: Install all dependencies
-        run: npm install
 
       - name: Build
         run: npm run build # The build command of your project
