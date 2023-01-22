@@ -31,9 +31,10 @@ jobs:
       - name: Install all dependencies
         run: npm install
 
-      - name: Build
-        run: npm run start
-        run: npm run test
+      - name: test
+        run: |
+          npm run start
+          npm run test
 
       - name: Build
         run: npm run build # The build command of your project
