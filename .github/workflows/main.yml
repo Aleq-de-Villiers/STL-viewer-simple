@@ -1,3 +1,4 @@
+#source: https://gist.github.com/umanghome/30527c68cd605dfef8702a832ff14fd5
 name: Generate a build and push to another branch
 
 on:
@@ -6,6 +7,19 @@ on:
       - master
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Build and Push
+    steps:
+      - name: git-checkout
+        uses: actions/checkout@v2
+
+      - name: Install all dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run test
+        
   build:
     runs-on: ubuntu-latest
     name: Build and Push
