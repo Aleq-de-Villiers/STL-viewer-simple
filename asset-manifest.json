@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/STL-viewer-simple.github.io/static/css/main.242a4595.css",
-    "main.js": "/STL-viewer-simple.github.io/static/js/main.ef060cc5.js",
-    "static/js/787.a9120f67.chunk.js": "/STL-viewer-simple.github.io/static/js/787.a9120f67.chunk.js",
-    "index.html": "/STL-viewer-simple.github.io/index.html",
-    "main.242a4595.css.map": "/STL-viewer-simple.github.io/static/css/main.242a4595.css.map",
-    "main.ef060cc5.js.map": "/STL-viewer-simple.github.io/static/js/main.ef060cc5.js.map",
-    "787.a9120f67.chunk.js.map": "/STL-viewer-simple.github.io/static/js/787.a9120f67.chunk.js.map"
+    "main.css": "/static/css/main.242a4595.css",
+    "main.js": "/static/js/main.06f00ae5.js",
+    "static/js/787.a9120f67.chunk.js": "/static/js/787.a9120f67.chunk.js",
+    "index.html": "/index.html",
+    "main.242a4595.css.map": "/static/css/main.242a4595.css.map",
+    "main.06f00ae5.js.map": "/static/js/main.06f00ae5.js.map",
+    "787.a9120f67.chunk.js.map": "/static/js/787.a9120f67.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.242a4595.css",
-    "static/js/main.ef060cc5.js"
+    "static/js/main.06f00ae5.js"
   ]
 }
