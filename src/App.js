@@ -9,8 +9,8 @@ import {
 } from "react-router-dom"
 import {StlViewer} from "react-stl-viewer";
 
-// const default_url = "https://storage.googleapis.com/ucloud-v3/ccab50f18fb14c91ccca300a.stl"
-const default_url = "https://storage.googleapis.com/ucloud-v3/02e14529f9df9a8ebbe03533.stl"
+const default_url = "https://storage.googleapis.com/ucloud-v3/ccab50f18fb14c91ccca300a.stl"
+// const default_url = "https://storage.googleapis.com/ucloud-v3/02e14529f9df9a8ebbe03533.stl"
 // const default_url = "https://storage.googleapis.com/ucloud-v3/1aebf6577c7f3c61905583ab.stl"
 const style = {
   height: '80vh',
