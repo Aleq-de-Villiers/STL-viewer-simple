@@ -27,7 +27,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4
 
   build:
-    requires: test
+    needs: test
     runs-on: ubuntu-latest
     name: Build and Push
     steps:
