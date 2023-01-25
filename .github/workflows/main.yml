@@ -7,9 +7,9 @@ on:
       - master
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-    name: Build and Push
+    name: Test
     steps:
       - name: git-checkout
         uses: actions/checkout@v2
@@ -22,6 +22,26 @@ jobs:
           CI=false
           npm start & npx wait-on http://localhost:3000
           npm run test
+      
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+
+  build:
+    requires: test
+    runs-on: ubuntu-latest
+    name: Build and Push
+    steps:
+      - name: git-checkout
+        uses: actions/checkout@v2
+
+      - name: Install all dependencies
+        run: npm install
+
+      # - name: Start and Test
+      #   run: |
+      #     CI=false
+      #     npm start & npx wait-on http://localhost:3000
+      #     npm run test
 
       - name: Build
         run: npm run build # The build command of your project
