@@ -10,7 +10,6 @@ import React from "react"
 export class Home extends React.Component {
     constructor(prop) {
         super()
-        console.log(prop);
 
         if(/^(http(s):\/\/.)[-a-zA-Z0-9@:%._~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_.~#?&//=]*)$/g.test(prop.url)) {
             this.url = prop.url
@@ -26,7 +25,7 @@ export class Home extends React.Component {
 
     render() {
         return (
-        <div>
+        <div id="stl-vew">
             <StlViewer
                 style={{height: '80vh'}}
                 shadows

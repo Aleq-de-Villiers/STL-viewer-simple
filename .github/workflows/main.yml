@@ -19,7 +19,6 @@ jobs:
 
       - name: Start and Test
         run: |
-          CI=false
           npm start & npx wait-on http://localhost:3000
           npm run test
       
@@ -37,14 +36,10 @@ jobs:
       - name: Install all dependencies
         run: npm install
 
-      # - name: Start and Test
-      #   run: |
-      #     CI=false
-      #     npm start & npx wait-on http://localhost:3000
-      #     npm run test
-
       - name: Build
-        run: npm run build # The build command of your project
+        run: |
+          CI=false
+          npm run build # The build command of your project
     
       - name: no Jekyll
         run: echo "" > build/.nojekyll
